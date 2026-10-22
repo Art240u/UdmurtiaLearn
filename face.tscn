@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dkfnyu7tfne51"]
+
+[node name="Node2D" type="Node2D" unique_id=2146937662]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2073630978]
+
+[node name="Control" type="Control" parent="." unique_id=1707205735]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="Control" unique_id=1960320456]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
