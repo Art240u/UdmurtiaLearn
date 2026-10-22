@@ -15,3 +15,6 @@
     *скорректирую текст если вспомню про те механики, что мы хотели реализовать и в них есть смысл
 
 Заметки: https://metanit.com/sharp/efcore/7.3.php
+
+        dotnet add package Dapper
+        dotnet add package Microsoft.Data.Sqlite
