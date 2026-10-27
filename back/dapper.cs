@@ -22,10 +22,10 @@ public static class Database
         c.Execute(
             """
             CREATE TABLE IF NOT EXISTS accounts (
-                id       INTEGER PRIMARY KEY AUTOINCREMENT,
-                username TEXT    NOT NULL UNIQUE,
-                level    INTEGER NOT NULL DEFAULT 1,
-                strick   INTEGER NOT NULL DEFAULT 0
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT NOT NULL UNIQUE,
+                level INTEGER NOT NULL DEFAULT 1,
+                streack INTEGER NOT NULL DEFAULT 0
             );
 
             CREATE INDEX IF NOT EXISTS idx_accounts_username
@@ -39,8 +39,8 @@ public static class Database
         using var c = Open();
         return c.ExecuteScalar<long>(
             """
-            INSERT INTO accounts (username, level, strick)
-            VALUES (@Username, @Level, @Strick)
+            INSERT INTO accounts (username, level, streack)
+            VALUES (@Username, @Level, @Streack)
             RETURNING id;
             """,
              a);
