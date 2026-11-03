@@ -24,7 +24,7 @@ namespace AccountModel
             return true;
         }
 
-        public void Lvl++ ()
+        public void LvlInc ()
         {
             Level = Level + 1
         }
