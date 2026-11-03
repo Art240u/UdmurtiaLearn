@@ -24,6 +24,16 @@ namespace AccountModel
             return true;
         }
 
+        public void Lvl++ ()
+        {
+            Level = Level + 1
+        }
+
+        public void LvlSet (int LevelThatSets)
+        {
+            Level = LevelThatSets
+        }
+        
         public void ChangeName(string newName)
         {
             Username = newName;
