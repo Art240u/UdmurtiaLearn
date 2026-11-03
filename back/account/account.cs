@@ -26,12 +26,17 @@ namespace AccountModel
 
         public void LvlInc ()
         {
-            Level = Level + 1
+            Level++;
         }
 
-        public void LvlSet (int LevelThatSets)
+        public bool LvlSet (int LevelThatSets)
         {
-            Level = LevelThatSets
+            if (LevelThatSets >= 1)
+            {
+                Level = LevelThatSets;
+                return true;
+            }
+            else return false;
         }
         
         public void ChangeName(string newName)
