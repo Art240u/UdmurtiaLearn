@@ -24,7 +24,7 @@ public static class Database
             """
             CREATE TABLE IF NOT EXISTS accounts (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
-                username TEXT NOT NULL UNIQUE,
+                username TEXT NOT NULL,
                 level INTEGER NOT NULL DEFAULT 1,
                 streack INTEGER NOT NULL DEFAULT 0
             );
@@ -68,7 +68,7 @@ public static class Database
             """
             SELECT id, username, level, streack
             FROM accounts
-            WHERE username = @username;
+            WHERE username = @username ORDER BY id DESC;
             """,
             new {username});
     }
