@@ -3,7 +3,7 @@ using AccountModel;
 
 public static class AccountCreator
 {
-    public static long Create(string username, int level, int streack)
+    public static long Create(string username)
     {
         if (string.IsNullOrWhiteSpace(username)) return -1;
 
@@ -11,9 +11,7 @@ public static class AccountCreator
 
         long id = Database.CreateAccount(new Account
         {
-            Username = username,
-            Level = level,
-            Streack = streack
+            Username = username
         }
         );
 
