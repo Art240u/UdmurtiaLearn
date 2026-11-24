@@ -11,12 +11,13 @@ config_version=5
 [application]
 
 config/name="UdmurtiaLearn"
+run/main_scene="res://ui.tscn"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-GameState="*uid://de836lhkggwqt"
+GameState="*res://GameState.cs"
 
 [display]
 
